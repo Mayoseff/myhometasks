@@ -10,23 +10,19 @@
 
 int main()
 {
-    unsigned int r;
+    int r;
     do {
         std::cout << "r = ";
         std::cin >> r;
     } while (r < 1 || r >= pow(10, 6));
 
-    int k = r; //Заранее учитываем точки лежащие на окружности
+    int k = 0;
 
-    for (int x = 0; x <= r; ++x)
+    for (int x = -r; x <= r; ++x)
     {
-        double xd = x;  //Честно говоря не знаю почему, но так вычисления происходят быстрее
-
-        for (int y = 0; y <= r; ++y)
+        for (int y = -r; y <= r; ++y)
         {
-            double yd = y;
-
-            if (sqrt(xd * xd + yd * yd) / r <= r) //Изначально было if(sqrt(x*x+y*y)<=r*r), но компилятор ругался на возможное переполнение из-за r*r
+            if ((x * x + y * y) <= (r * r))
                 ++k;
         }
     }
