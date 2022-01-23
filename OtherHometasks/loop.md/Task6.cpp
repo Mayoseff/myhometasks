@@ -43,7 +43,7 @@ int main()
         }
         std::cout << "    " << "Шаг " << k << "\t" << "|" << "\t" << "n = " << n;
         if (max == n)
-            std::cout << "  <-- Новая вершина";
+            std::cout << " <-- новая вершина";
         std::cout << std::endl;
     }
     std::cout << std::endl;
