@@ -9,8 +9,7 @@
 int main()
 {
     int n;
-    std::cout << "Number = ";
-    std::cin >> n;
+    std::cout << "Number = "; std::cin >> n;
 
     if (n == 0) { std::cout << 0; return 0; }
 
