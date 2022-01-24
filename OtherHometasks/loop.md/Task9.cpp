@@ -17,7 +17,6 @@ int main()
     {
         if ((n >> i) % 2 == 0)
             std::cout << 0;
-
         else std::cout << 1;
     }
     return 0;
