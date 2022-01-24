@@ -7,14 +7,14 @@
 
 int main()
 {
-    long int S = 0;
-    long int pr = 1;
-    long int n;
+    int S = 0;
+    int pr = 1;
+    int n;
 
     std::cout << "n= ";
     std::cin >> n;
 
-    long int x = n;
+    int x = n;
     while (x > 0)
     {
         S += x % 10;
