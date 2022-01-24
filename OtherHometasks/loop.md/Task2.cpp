@@ -18,13 +18,10 @@ int main()
 	{
 		int num = 1;
 		for (int i = 0; i < k; ++i)
-		{
 			num *= 2;
-		}
 		++k;
 		S += 1.0 / num;
 	}
 	std::cout << S;
-
 	return 0;
 }
